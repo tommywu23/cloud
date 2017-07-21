@@ -8,7 +8,7 @@ Overview
 The fastest way to get running:
 
 * build sc config env
-* use consul implement service discovery
-* use sc config implement configuration
-* use spring-boot-actuator implement refresh config of dynamic
-* use spring-retry solve network fluctuation and exception
+* use consul to implement service discovery
+* use sc config to implement configuration
+* use spring-boot-actuator to implement refresh config of dynamic
+* use spring-retry to solve network fluctuation and exception
