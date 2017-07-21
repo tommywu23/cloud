@@ -1,0 +1,31 @@
+server:
+  port: 8888
+  address: 10.10.20.118
+spring:
+  application:
+    name: cloud-config-server
+  profiles:
+    active: dev,test,prod,dba,tommy
+  cloud:
+      consul:
+        enabled: true
+        host: 10.10.20.237
+        port: 8500
+        discovery:
+          hostname: ${server.address}
+          port: ${server.port}
+          instance-id: ${spring.application.name}:${random.int[1,1000]}
+          health-check-timeout: 15s
+      config:
+        server:
+        #git config
+          git:
+            #uri: file://${user.home}/config-repo/cloud
+            #uri: https://github.com/tommywu23/cloud.git
+            #username: tommywu23@126.com
+            #password: gyd040614
+            #search-paths: /config-repo
+            uri: http://10.10.50.232:10086/wujs/cloud.git
+            username: wujs@neotv.me
+            password: wjs007008
+            search-paths: /config-repo
