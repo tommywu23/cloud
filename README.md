@@ -12,3 +12,8 @@ The fastest way to get running:
 * use sc config to implement configuration
 * use spring-boot-actuator to implement refresh config of dynamic
 * use spring-retry to solve network fluctuation and exception
+
+
+Updated
+===========
+* use sc-bus and kafka to implement refresh config of dynamic
