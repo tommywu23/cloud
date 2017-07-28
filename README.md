@@ -17,3 +17,10 @@ The fastest way to get running:
 Updated
 ===========
 * use sc-bus and kafka to implement refresh config of dynamic
+
+
+Env & Use Requirement
+===========
+* kafka 2.11-0.10.11
+* need add POST /bus/refresh to Webhook for github.com project
+* if you need encrypt, add encrypt.key to applicaton.yml
